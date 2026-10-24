@@ -39,8 +39,8 @@ app's policy for this child-facing app.
 ## Hosting and validation
 
 Plain HTML; no framework or analytics scripts are required. Preserve the existing
-GitHub Pages settings. If Pages needs activation, use **Settings → Pages → Deploy
-from a branch → main → / (root)**. `.nojekyll` skips Jekyll processing.
+GitHub Pages settings. To make deployment manual, use **Settings → Pages → Build and deployment →
+Source → GitHub Actions**. `.nojekyll` skips Jekyll processing.
 `app-ads.txt` remains at the site root for advertising-seller verification.
 
 Run `python3 tools/validate-policies.py` to validate page structure, index links,
@@ -92,3 +92,16 @@ Orbit Flip's catalogue entry is marked `in_preparation`; its prospective Play
 link is not evidence that a listing is published. After deploying, use
 https://andrix-software.github.io/orbitflip.html in Play Console. This policy
 change does not rebuild or alter the game APK.
+
+## Manual website deployment
+
+The checked-in `Publish website (manual)` workflow runs only through
+**Actions → Publish website (manual) → Run workflow**. It has no push, pull-request
+or scheduled trigger.
+
+**Required one-time repository setting:** open **Settings → Pages → Build and
+deployment → Source** and select **GitHub Actions**. A site still configured as
+**Deploy from a branch** can run GitHub-generated automatic Pages deployments,
+even when all checked-in workflow files are manual-only. Changing workflow YAML
+alone does not switch that setting. Keep the `github-pages` environment available
+for the deployment job; any environment approvals still apply.
