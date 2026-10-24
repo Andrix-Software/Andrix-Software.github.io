@@ -49,6 +49,17 @@
       "privacy_policy": "movies-now.html",
       "package_source": "movies_now/app/build.gradle.kts",
       "play_listing_verified": false
+    },
+    {
+      "name": "Kids Coloring Book",
+      "package": "com.andrix.kids.coloring",
+      "play_store_url": "https://play.google.com/store/apps/details?id=com.andrix.kids.coloring",
+      "privacy_policy": "https://infantilaprendizaj.wixsite.com/infantil",
+      "package_source": "Kids-Coloring-Painting/Code/proj.android/app/build.gradle",
+      "privacy_policy_source": "Kids-Coloring-Painting/Code/proj.android/app/res/values/strings.xml",
+      "listing_reference_source": "user_provided_google_play_url",
+      "play_listing_verified": false,
+      "privacy_policy_verified": false
     }
   ]
 }

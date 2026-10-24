@@ -31,8 +31,9 @@ after confirming the organization pages are live.
 Before updating Play Console, confirm each new URL loads publicly without
 sign-in. Set both the store listing and any in-app policy link to the same URL.
 Keep the old URLs available for installed versions that still use them.
-Kids-Coloring-Painting and puzzle-battler have no supplied policy page; do not
-reuse another app's policy for those apps.
+Kids Coloring Book uses the external privacy URL configured in its Android
+resources. Its policy has not been imported or audited. Do not reuse another
+app's policy for this child-facing app.
 
 ## Hosting and validation
 
@@ -52,7 +53,7 @@ public pages match these policies. This needs network access to the Pages host.
 
 ## Google Play links
 
-Each of the six existing app cards links to its package-specific Google Play page
+Each of the seven app cards links to its package-specific Google Play page
 and its own privacy policy. The header and app section also link to the developer
 page https://play.google.com/store/apps/dev?id=6051062013551575817 .
 
@@ -62,6 +63,9 @@ The cloud network currently blocks Google Play; no live listing availability or
 developer-account membership has been verified. `play_listing_verified: false`
 is intentional. Check the developer page when access is available, add any missing
 published apps, and verify each details link before treating the catalogue as
-complete. Kids Coloring Book (`com.andrix.kids.coloring`) exists in the supplied
-repositories but has no supplied privacy policy; it is not added to the website
-pending live listing verification and a policy link.
+complete. Kids Coloring Book (`com.andrix.kids.coloring`) was added from the user-provided
+Play Store URL and its repository package ID. Its existing external privacy URL
+comes from `privacy_url` in the Android strings.xml. The external page and its
+contact email have not been verified; it is not one of the six locally maintained
+policies. Review it against the shipped app before treating it as a migrated
+organization policy.

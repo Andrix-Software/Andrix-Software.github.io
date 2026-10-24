@@ -36,11 +36,15 @@ print('Six policy imports, homepage/catalog links and app-ads.txt validated.')
 
 catalogue=json.loads((ROOT/'apps.json').read_text())
 assert catalogue['developer_page'] in pages['index.html'].links
-assert len(catalogue['apps'])==6
-assert len({app['package'] for app in catalogue['apps']})==6
+assert len(catalogue['apps'])==7
+assert len({app['package'] for app in catalogue['apps']})==7
 for app in catalogue['apps']:
     assert app['play_store_url']=='https://play.google.com/store/apps/details?id='+app['package']
     assert app['play_store_url'] in pages['index.html'].links,app['name']
     assert app['privacy_policy'] in pages['index.html'].links,app['name']
-    assert (ROOT/app['privacy_policy']).is_file(),app['name']
-print('Six app-specific Play links, policy links and developer-page link validated locally.')
+    assert app['privacy_policy'] in pages['privacy.html'].links,app['name']
+    if app['privacy_policy'].startswith('https://'):
+        assert app.get('privacy_policy_source'),app['name']
+    else:
+        assert (ROOT/app['privacy_policy']).is_file(),app['name']
+print('Seven app-specific Play links, policy links and developer-page link validated locally.')
