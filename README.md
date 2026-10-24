@@ -5,6 +5,7 @@ All app policies: https://andrix-software.github.io/privacy.html .
 
 | App | Privacy policy URL |
 | --- | --- |
+| Orbit Flip | https://andrix-software.github.io/orbitflip.html |
 | NetPulse | https://andrix-software.github.io/netpulse.html |
 | TapSync | https://andrix-software.github.io/tapsync.html |
 | Dot Dodge | https://andrix-software.github.io/dotdodge.html |
@@ -48,12 +49,12 @@ before the first publication; later policy edits naturally change those hashes. 
 the current distributed version, including the standardized contact address. Public Pages deployment must also be checked independently; a
 successful Git push does not prove that the website has deployed.
 
-After deployment, run `python3 tools/check-live-policies.py` to confirm all six
+After deployment, run `python3 tools/check-live-policies.py` to confirm all seven
 public pages match these policies. This needs network access to the Pages host.
 
 ## Google Play links
 
-Each of the seven app cards links to its package-specific Google Play page
+Each of the eight app cards links to its package-specific Google Play page
 and its own privacy policy. The header and app section also link to the developer
 page https://play.google.com/store/apps/dev?id=6051062013551575817 .
 
@@ -69,3 +70,25 @@ comes from `privacy_url` in the Android strings.xml. The external page and its
 contact email have not been verified; it is not one of the six locally maintained
 policies. Review it against the shipped app before treating it as a migrated
 organization policy.
+
+## Orbit Flip policy
+
+`orbitflip.html` was authored on 24 October 2026 from the verified Orbit Flip
+0.8.0 source (commit `516f2218774d21783577b077b24b2db8e7a88902`) and the owner's
+18-and-over audience decision. It covers local progress, optional rewarded
+AdMob ads, UMP consent/privacy controls, SDK data processing, support, retention
+and deletion. No separate Firebase Analytics/Crashlytics, billing, player account,
+cloud saves or leaderboard service was present in that implementation.
+
+The verified build uses test ads; the supplied live AdMob IDs and release
+configuration have not yet been confirmed integrated. The policy does not claim
+an age gate or identity verification. Recheck it against the final release
+before completing Play Data safety declarations. The policy uses the existing
+public privacy contact, andrix.android@gmail.com. It is a new policy, not a
+migrated document; its metadata records the implementation source and published
+hash without inventing an original import hash.
+
+Orbit Flip's catalogue entry is marked `in_preparation`; its prospective Play
+link is not evidence that a listing is published. After deploying, use
+https://andrix-software.github.io/orbitflip.html in Play Console. This policy
+change does not rebuild or alter the game APK.

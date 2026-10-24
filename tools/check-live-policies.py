@@ -10,4 +10,4 @@ for policy in json.loads((root/'policies.json').read_text()):
         assert 'privacy' in body.lower(),policy['url']
         assert body==(root/policy['path']).read_text(),('Deployed content differs',policy['url'])
         print('LIVE',policy['url'])
-print('All six public pages match the migrated policies.')
+print('All seven public pages match the maintained policies.')

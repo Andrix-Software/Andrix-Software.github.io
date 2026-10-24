@@ -46,5 +46,14 @@
     "source": "https://github.com/andrix-softwares/projects/blob/cf47443b72318636411458e15073ae908fdb54f2/privacy-policy.html",
     "imported_sha256": "deb0def5ce59a58f1d7327dd97c35f3366b0b9adec55c24a6ffae295ce16ae87",
     "published_sha256": "deb0def5ce59a58f1d7327dd97c35f3366b0b9adec55c24a6ffae295ce16ae87"
+  },
+  {
+    "app": "Orbit Flip",
+    "path": "orbitflip.html",
+    "url": "https://andrix-software.github.io/orbitflip.html",
+    "source": "https://github.com/ASHWIN-S-ASHOK/sample-repo01/tree/516f2218774d21783577b077b24b2db8e7a88902",
+    "source_type": "app_implementation",
+    "provenance": "New policy authored from Orbit Flip 0.8.0 implementation and the owner-confirmed adult audience; contact details match this website.",
+    "published_sha256": "23fc81c968a51fa398926f1bc5802e25449132c8cc1d6b0cdbf9a962217b397c"
   }
 ]
