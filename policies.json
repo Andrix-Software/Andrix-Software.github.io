@@ -1,0 +1,44 @@
+[
+  {
+    "app": "NetPulse",
+    "path": "netpulse.html",
+    "url": "https://andrix-software.github.io/netpulse.html",
+    "source": "https://github.com/ASHWIN-S-ASHOK/andrix-softwares/blob/adb5266417b59c7e371a910008fa19b7f89245b0/netpulse.html",
+    "imported_sha256": "c2db6e3f35738dd21daea858fd4aa69490f4a3f951a1ef11460a2383b500fcde"
+  },
+  {
+    "app": "TapSync",
+    "path": "tapsync.html",
+    "url": "https://andrix-software.github.io/tapsync.html",
+    "source": "https://github.com/ASHWIN-S-ASHOK/andrix-softwares/blob/adb5266417b59c7e371a910008fa19b7f89245b0/tapsync.html",
+    "imported_sha256": "9c686922f2ac75777c26d7dd1d9471c4e96e244a345e0869b2fc9b4fa38a12fc"
+  },
+  {
+    "app": "Dot Dodge",
+    "path": "dotdodge.html",
+    "url": "https://andrix-software.github.io/dotdodge.html",
+    "source": "https://github.com/ASHWIN-S-ASHOK/andrix-softwares/blob/adb5266417b59c7e371a910008fa19b7f89245b0/dotdodge.html",
+    "imported_sha256": "481436125160e4ec1433b8b7071f5c1a489d08dd1c5cad450ef8cfa75810e5f7"
+  },
+  {
+    "app": "jQuery Learn",
+    "path": "jquery.html",
+    "url": "https://andrix-software.github.io/jquery.html",
+    "source": "https://github.com/ASHWIN-S-ASHOK/Jquery/blob/170f97f5743f6652aa05b746bdedb12fec894651/store-listing/privacy-policy.html",
+    "imported_sha256": "7e7ef3e9c2ab244638709661563cc198e33f5217ad014f1f3f287dd930e935b1"
+  },
+  {
+    "app": "English Grammar Learn",
+    "path": "english-grammar.html",
+    "url": "https://andrix-software.github.io/english-grammar.html",
+    "source": "https://github.com/ASHWIN-S-ASHOK/English-Grammar/blob/52da1ddad90ab7208e51e5e5703b45d583fe7151/docs/privacy-policy.html",
+    "imported_sha256": "0cd70461d002fbc36d7563e46298e6eb07218d91a5f95165a5100c88309e969a"
+  },
+  {
+    "app": "Movies Now",
+    "path": "movies-now.html",
+    "url": "https://andrix-software.github.io/movies-now.html",
+    "source": "https://github.com/andrix-softwares/projects/blob/cf47443b72318636411458e15073ae908fdb54f2/privacy-policy.html",
+    "imported_sha256": "deb0def5ce59a58f1d7327dd97c35f3366b0b9adec55c24a6ffae295ce16ae87"
+  }
+]
