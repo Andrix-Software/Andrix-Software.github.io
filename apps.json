@@ -1,0 +1,54 @@
+{
+  "developer_page": "https://play.google.com/store/apps/dev?id=6051062013551575817",
+  "verification_status": "pending_live_google_play_access",
+  "apps": [
+    {
+      "name": "NetPulse",
+      "package": "com.andrix.netpulse",
+      "play_store_url": "https://play.google.com/store/apps/details?id=com.andrix.netpulse",
+      "privacy_policy": "netpulse.html",
+      "package_source": "net_pulse/app/build.gradle.kts",
+      "play_listing_verified": false
+    },
+    {
+      "name": "TapSync",
+      "package": "com.andrix.tapsync",
+      "play_store_url": "https://play.google.com/store/apps/details?id=com.andrix.tapsync",
+      "privacy_policy": "tapsync.html",
+      "package_source": "TapSync/app/build.gradle.kts",
+      "play_listing_verified": false
+    },
+    {
+      "name": "Dot Dodge",
+      "package": "com.andrix.dotdodge",
+      "play_store_url": "https://play.google.com/store/apps/details?id=com.andrix.dotdodge",
+      "privacy_policy": "dotdodge.html",
+      "package_source": "puzzle-battler/export_presets.cfg",
+      "play_listing_verified": false
+    },
+    {
+      "name": "jQuery Learn",
+      "package": "com.andrix.jquery",
+      "play_store_url": "https://play.google.com/store/apps/details?id=com.andrix.jquery",
+      "privacy_policy": "jquery.html",
+      "package_source": "Jquery/app/build.gradle",
+      "play_listing_verified": false
+    },
+    {
+      "name": "English Grammar",
+      "package": "com.andrix.englishgrammar",
+      "play_store_url": "https://play.google.com/store/apps/details?id=com.andrix.englishgrammar",
+      "privacy_policy": "english-grammar.html",
+      "package_source": "English-Grammar/app/build.gradle",
+      "play_listing_verified": false
+    },
+    {
+      "name": "Movies Now",
+      "package": "com.syso.rateit",
+      "play_store_url": "https://play.google.com/store/apps/details?id=com.syso.rateit",
+      "privacy_policy": "movies-now.html",
+      "package_source": "movies_now/app/build.gradle.kts",
+      "play_listing_verified": false
+    }
+  ]
+}

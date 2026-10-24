@@ -26,6 +26,21 @@ for p in policies:
     assert p['url']=='https://andrix-software.github.io/'+p['path']
     if '--verify-imports' in sys.argv:
         assert hashlib.sha256((ROOT/p['path']).read_bytes()).hexdigest()==p['imported_sha256'],p['path']
+    assert 'mailto:andrix.android@gmail.com' in pages[p['path']].links,p['path']
+    assert all(href == 'mailto:andrix.android@gmail.com' for href in pages[p['path']].links if href.startswith('mailto:')),p['path']
+    if 'published_sha256' in p:
+        assert hashlib.sha256((ROOT/p['path']).read_bytes()).hexdigest()==p['published_sha256'],p['path']
     print('OK',p['app'],p['url'])
 assert (ROOT/'app-ads.txt').read_text().strip()=='google.com, pub-7116396142264702, DIRECT, f08c47fec0942fa0'
 print('Six policy imports, homepage/catalog links and app-ads.txt validated.')
+
+catalogue=json.loads((ROOT/'apps.json').read_text())
+assert catalogue['developer_page'] in pages['index.html'].links
+assert len(catalogue['apps'])==6
+assert len({app['package'] for app in catalogue['apps']})==6
+for app in catalogue['apps']:
+    assert app['play_store_url']=='https://play.google.com/store/apps/details?id='+app['package']
+    assert app['play_store_url'] in pages['index.html'].links,app['name']
+    assert app['privacy_policy'] in pages['index.html'].links,app['name']
+    assert (ROOT/app['privacy_policy']).is_file(),app['name']
+print('Six app-specific Play links, policy links and developer-page link validated locally.')
